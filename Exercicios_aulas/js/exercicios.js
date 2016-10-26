@@ -130,3 +130,16 @@ else if (sexo == "masculino")
 else
 { alert("Olá " + nome)}
 
+
+// Exercicio 9
+
+var horas = prompt("Que horas são?")
+
+if (horas >= 19 )
+{ 
+    alert("É noite");
+}
+else if (horas <= 18)
+{ 
+    alert("É dia");
+}
