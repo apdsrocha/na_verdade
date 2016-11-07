@@ -1,0 +1,149 @@
+
+/* MediaQuery para mostrar share do whastapp no mobile */
+@media screen and (max-width:1400px)
+{
+    .whatsapp { }
+}
+
+@media screen and (min-width:600px)
+{
+    .whatsapp { display:none; }
+}
+
+body {
+    font-family: 'Abel';
+    font-size: 15px;
+    color: #333;
+    background-color: grey;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Fjalla One';
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 50px;
+}
+h2 {
+  font-family: 'Fjalla One';
+  font-size: 30px;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#wraptop {
+  background-color: #F7F7F7;
+  padding: 20px 40px 40px 20px;
+  width: 100%;
+  font-family: 'Abel';
+  font-size: 20px;
+  text-align: left;
+  margin-top: 70px;
+  list-style: none;
+ }
+#wrap {
+  background-color: #F7F7F7;
+  padding: 20px 40px 40px 20px;
+  width: 100%;
+  font-family: 'Abel';
+  font-size: 20px;
+  text-align: left;
+  list-style: none;
+ }
+
+.filterform {
+  margin-top: 15px;
+ }
+.filterinput {
+  border-color: black;
+ }
+
+.myth {
+  font-weight: bold;
+  font-size: 25px;
+ }
+.entry {
+  margin-bottom: 15px;
+ }
+ .info {
+   margin: 15px;
+   font-size: 18px;
+  
+ }
+
+.mission { 
+  background-color:  #F7F7F7;
+  padding: 10% 5% 10% 5%;
+  width: 100%;
+  font-family: 'Fjalla One';
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+ 
+ }
+.resources {
+  background-color:  #F7F7F7;
+  padding: 20px 40px 40px 20px;
+  width: 100%;
+  font-family: 'Fjalla One';
+  font-size: 20px;
+  text-align: left;
+  list-style: none;
+  margin-top: 10px;
+}
+.content {
+  font-family: 'Abel';
+  font-size: 20;
+  padding: 20%, 10%, 20%, 10%;
+}
+.modal-title {
+  color: red;
+}
+
+.whatsapp {
+  color: red;
+}
+
+.contribute{
+  background-color:  #F7F7F7;
+  padding: 10% 10% 10% 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.contact {
+  background-color:  grey;
+  padding: 15% 10% 15% 10%;
+  width: 100%;
+  font-family: 'Fjalla One';
+  font-size: 20px;
+  text-align: right;
+  font-color: #F7F7F7;
+  margin-top: 10px;
+}
+
+.navbar-brand {
+  font-family: 'Fjalla One';
+  font-size: 30px;
+ }
+.navbar-custom {
+  background-color: black;
+  color: white;
+  border-color: black;
+  
+}
+
+.holder-1, .holder-2 , .holder-3 {
+  color: red;
+}
+
+
