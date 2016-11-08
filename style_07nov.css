@@ -48,6 +48,7 @@ p {
 #wraptop {
   background-color: #F7F7F7;
   padding: 20px 40px 40px 20px;
+  width: 100%;
   font-family: 'Abel';
   font-size: 20px;
   margin-top: 70px;
@@ -80,7 +81,8 @@ p {
 .entry {
   background-color: #F7F7F7;
   padding: 10px;
-  margin: 5%;
+  margin-top: 5%;
+  margin-right: 10%;
   width: 370px;
   float: left;
   text-align: justify;
