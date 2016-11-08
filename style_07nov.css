@@ -31,6 +31,7 @@ h1 {
   font-size: 40px;
   color: #333;
   margin-bottom: 50px;
+
 }
 h2 {
   font-family: 'Fjalla One';
@@ -39,66 +40,72 @@ h2 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+p {
+  margin: 10px;
+}
+
 
 #wraptop {
   background-color: #F7F7F7;
   padding: 20px 40px 40px 20px;
-  width: 100%;
   font-family: 'Abel';
   font-size: 20px;
-  text-align: left;
   margin-top: 70px;
-  list-style: none;
- }
-#wrap {
-  background-color: #F7F7F7;
-  padding: 20px 40px 40px 20px;
-  width: 100%;
-  font-family: 'Abel';
-  font-size: 20px;
-  text-align: left;
+  display: center;
+  text-align: center;
   list-style: none;
  }
 
-.filterform {
-  margin-top: 15px;
-  width: 100%;
+#wrap {
+  background-color: #F7F7F7;
+  font-family: 'Abel';
+  font-size: 20px;
+  list-style: none;
  }
+.list {
+  background-color: #F7F7F7;
+}
+
 .filterinput {
   border-color: black;
   width: 100%;
+  float: left;
  }
 
 .myth {
   font-weight: bold;
   font-size: 25px;
  }
+
 .entry {
-  margin-bottom: 15px;
- }
- .info {
-   margin: 15px;
-   font-size: 18px;
-  
+  background-color: #F7F7F7;
+  padding: 10px;
+  margin: 5%;
+  width: 370px;
+  float: left;
+  text-align: justify;
  }
 
-.mission { 
+ .info {
+  margin: 15px;
+  font-size: 18px;
+ }
+
+#about { 
   background-color:  #F7F7F7;
   padding: 10% 5% 10% 5%;
-  width: 100%;
   font-family: 'Fjalla One';
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
- 
  }
-.resources {
+
+#learnmore {
   background-color:  #F7F7F7;
   padding: 20px 40px 40px 20px;
   width: 100%;
   font-family: 'Fjalla One';
   font-size: 20px;
-  text-align: left;
   list-style: none;
   margin-top: 10px;
 }
@@ -113,19 +120,19 @@ h2 {
 
 .whatsapp {
   color: red;
+  font-size: 15px;
 }
 
-.contribute{
+#contribute{
   background-color:  #F7F7F7;
   padding: 10% 10% 10% 10%;
   width: 100%;
   text-align: center;
   margin-top: 10px;
 }
-.contact {
+#contact {
   background-color:  grey;
   padding: 15% 10% 15% 10%;
-  width: 100%;
   font-family: 'Fjalla One';
   font-size: 20px;
   text-align: right;

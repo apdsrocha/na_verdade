@@ -1,7 +1,10 @@
 <html>
 <head>
     <title>Na Verdade</title>
+    <!-- Caracteres -->
     <meta charset=UTF-8>
+
+    <!-- Ajustar Tamanho do Browser -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Bootstrap - CSS Javascript e JQuery -->
@@ -9,8 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-    <!--MediaQuery para esconder link do whatsapp no desktop
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--MediaQuery para esconder link do whatsapp no desktop-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- JQuery do texto Missāo-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.min.js"> </script>
@@ -32,70 +35,163 @@
 
 
         <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="" class="navbar-brand">NVDD</a>
+                    <a href="https://github.com/apdsrocha/reprograma/index.html" class="navbar-brand">NVDD</a>
                     <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#naVerdade"></button>
                 </div>
-                <ul id="naVerdade" class="nav navbar-nav navbar-right collapse navbar-collapse">
-                    <li class="active"><a href="">BUSCA</a></li>
-                    <li><a href="">FONTES</a></li>
-                    <li><a href="">MISSÃO</a></li>
-                    <li><a href="">CONTRIBUIÇÃO</a></li>
-                    <li><a href="">CONTATO</a></li>
+                <ul class="nav navbar-nav collapse navbar-collapse">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#contribute">CONTRIBUA</a></li>
+                    <li><a href="#learnmore">SAIBA MAIS</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
                 </ul>
             </div>
         </nav>
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-10">
+            <div id="wraptop">
+                <h1 id="header">QUAL O MITO?</h1>
+            </div>
+            <div id="wrap">
+                <div id="list" class="list-unstyled">
+                    <div class="entry">
 
-<div id="wraptop">
-    <h1 id="header">QUAL O MITO?</h1>
-</div>
-<div id="wrap">
-    <div id="list" class="list-unstyled">
-        <div class="entry">
+                        <div class="myth">“Mulheres não gostam de futebol”</div>
 
-            <div class="myth">“Mulheres não gostam de futebol”</div>
+                        <div class="info">Na verdade, o futebol nasceu popular entre homens e mulheres. No Brasil, há registros de partidas/platéia com presença feminina nos anos 20. Em  1941 um decreto proibiu as mulheres de jogar e frequentar estádios. Foi vigente até 1975. A prática só foi permitida a partir de 1981 mas sem profissionalização (só aconteceu  em 1996. </div>
 
-            <div class="info">Na verdade, o futebol nasceu popular entre homens e mulheres. No Brasil, há registros de partidas/platéia com presença feminina nos anos 20. Em  1941 um decreto proibiu as mulheres de jogar e frequentar estádios. Foi vigente até 1975. A prática só foi permitida a partir de 1981 mas sem profissionalização (só aconteceu  em 1996. </div>
+                        <div class="info">Na verdade, as mulheres tiveram muitas conquistas no futebol. Marta, por exemplo, foi escolhida como a melhor jogadora do mundo cinco vezes consecutivas (recorde entre homens e mulheres).</div>
 
-            <div class="info">Na verdade, as mulheres tiveram muitas conquistas no futebol. Marta, por exemplo, foi escolhida como a melhor jogadora do mundo cinco vezes consecutivas (recorde entre homens e mulheres).</div>
+                        <!-- Botão Fonte 1 -->
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#01">FONTE</button>
 
-        </div>
+                        <!-- Modal Fonte 2 -->
+                        <div class="modal fade" id="01" tabindex="-1" role="dialog" aria-labelledby="01Label">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="01Label">Fontes | Artigos | Dados</h4>
+                                    </div>
 
-        <div class="entry">
-            <div class="myth">"Mulheres são ruins em matemática/ não tem aptidão para exatas”</div>
+                                    <div class="modal-body">
+                                    <p>As arquibancadas da torcedora e a presen;a feminina nos estádios brasileiros: Costa, Leda, 2016 [Online]</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://blogdojuca.uol.com.br/2016/07/as-arquibancadas-da-torcedora-a-presenca-feminina-nos-estadios-brasileiros/">Envie por whatsapp</a></p>
 
-            <div class="info">Na verdade as habilidades de homens e mulheres para matemática são iguais. Estudos publicados entre 1990 e 2010 mostram que a diferença de performance entre os sexos nao é significante. </div>
+                                    </div>
 
-            <div class="info">Na verdade, de tanto repetir que meninas são ruins em matemática se configurou um fenômeno chamado “ameaça do estereótipo”, onde o reforço da sociedade convence as meninas e interfere na performance. </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+
+
+
+
+
+                    </div>
+
+                    <div class="entry">
+                        <div class="myth">"Mulheres são ruins em matemática/ não tem aptidão para exatas”</div>
+
+                        <div class="info">Na verdade as habilidades de homens e mulheres para matemática são iguais. Estudos publicados entre 1990 e 2010 mostram que a diferença de performance entre os sexos nao é significante. </div>
+
+                        <div class="info">Na verdade, de tanto repetir que meninas são ruins em matemática se configurou um fenômeno chamado “ameaça do estereótipo”, onde o reforço da sociedade convence as meninas e interfere na performance. </div>
+
+
+
+                        <!-- Botão Fonte 2 -->
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
+
+                        <!-- Modal Fonte 2 -->
+                        <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
+                                    </div>
+
+                                    <div class="modal-body">
+                                    <p>Não há diferença na inteligência dos gêneros: Nicole M. Else-Quest, Janet Shibley Hyde, Marcia C. Linn. Cross-national patterns of gender differences in mathematics: A meta-analysis.. Psychological Bulletin, 2010</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=linkdoartigo">Envie por whatsapp</a></p>
+
+                                    <p>A ameaça dos estereótipos: Steele, Claude M.; Aronson, Joshua (November 1995). "Stereotype threat and the intellectual test performance of African Americans". Journal of Personality and Social Psychology.</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: linkdoartigo">Envie por whatsapp</a></p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 
-<div class ="resources">
-    <h1>RECURSOS</h1>
-    <p> Selecione a categoria para ter acesso aos estudos, fontes, bibliografias, autores e artigos que alimentam nossa busca.</p>
+
+<div id ="about">
+    <h1>POR QUE O "NA VERDADE" EXISTE:</h1>
+        <h2>É comum ouvir <span class="holder-1"></span> todo tipo de afirmação <span class="holder-2"></span> sobre as mulheres.</h2>
+
+        <h2>Na hora, o impulso pode ser deixar passar, mas é “deixando passar” que reforçamos uma fala de <span class="holder-3"></span>.</h2>
+
+        <h2> Neste site você pode buscar respostas para lidar com estas situações e fazer sua parte liderando a mudança de discurso.</h2>
+
+
+</div>
+
+
+<div id ="contribute">
+     
+    <h1>Ajude a ampliar o conteúdo. </h1>
+        <h2>Envie mitos que precisam ser derrubados ou recursos que podem ajudar nessa tarefa. A hashtag #naverdade é o jeito mais rápido de contribuir:</h2>
+
+        <!-- Widget para trazer timeline do Twitter -->
+        <a class="twitter-timeline"  href="https://twitter.com/search?q=%23naverdade%20lang%3Apt" data-widget-id="795368457126682625">Tweets about #naverdade lang:pt</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+    
+</div>
+
+
+<div id ="learnmore">
+    <h1>SAIBA MAIS</h1>
+    <p> Nossa coleção de recursos relacionados a mulheres:</p>
+
     
 
     <!-- Botão Categoria 1 -->
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#artes">
-        ARTES
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#groups">
+        COLETIVOS
     </button>
 
     <!-- Modal Categoria 1 -->
-    <div class="modal fade" id="artes" tabindex="-1" role="dialog" aria-labelledby="artesLabel">
+    <div class="modal fade" id="groups" tabindex="-1" role="dialog" aria-labelledby="groupsLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="artesLabel">ARTE</h4>
+                    <h4 class="modal-title" id="groupsLabel">COLETIVOS</h4>
                 </div>
 
                 <div class="modal-body">
-                ...
+                <ul>
+                    <li>Coletivo Feminista - Saúde e Sexualidade (SP) - <a href="link">Facebook</a></li>
+                    <li>Coletivo Não Me Kahlo - <a href="link">Facebook</a></li>
+                    <li>Coletivo </li> 
                 </div>
 
                 <div class="modal-footer">
@@ -106,23 +202,27 @@
     </div>
 
     <!-- Botão Categoria 2 -->
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">
-    CIÊNCIAS BIOLÓGICAS
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#women">
+    MULHERES INCRÍVEIS
     </button>
 
     <!-- Modal Categoria 2 -->
-    <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+    <div class="modal fade" id="women" tabindex="-1" role="dialog" aria-labelledby="womenLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="bioLabel">CIÊNCIAS BIOLÓGICAS</h4>
+                    <h4 class="modal-title" id="modalLabel">MULHERES INCRÍVEIS</h4>
                 </div>
 
                 <div class="modal-body">
                 <ul class="list-unstyled content">
-                 <li>Não há diferença na inteligência dos gêneros: Nicole M. Else-Quest, Janet Shibley Hyde, Marcia C. Linn. Cross-national patterns of gender differences in mathematics: A meta-analysis.. Psychological Bulletin, 2010</li>
-                <li><a class="whatsapp" href="whatsapp://send?text=Artigo">Envie por whatsapp</a>
+                    <li>Stephanie Stevens - Wikipedia</li>
+                    <li>Ada Lovelace - Wikipedia</li>
+                    <li>Juliana Faria - Think Olga | Chega de Fiu Fiu</li>
+                    <li>Clara Averbuck - Blog</li>
+
+                <li><a class="whatsapp" href="whatsapp://send?text=Artigo">Envie por whatsapp</a></li>
                 </ul>
                 </div>
 
@@ -134,17 +234,17 @@
     </div>
 
     <!-- Botão Categoria 3 -->
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exact">
-    CIÊNCIAS EXATAS
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#motivation">
+    INCENTIVO
     </button>
 
     <!-- Modal Categoria 3 -->
-    <div class="modal fade" id="exact" tabindex="-1" role="dialog" aria-labelledby="exactLabel">
+    <div class="modal fade" id="motivation" tabindex="-1" role="dialog" aria-labelledby="motivationLabel">
     <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exactLabel">CIÊNCIAS EXATAS</h4>
+        <h4 class="modal-title" id="motivationLabel">INCENTIVO</h4>
       </div>
       <div class="modal-body">
         ...
@@ -157,21 +257,21 @@
     </div>
 
     <!-- Botão Categoria 4 -->
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#behavior">
-    COMPORTAMENTO
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#studies">
+    ESTUDOS
     </button>
 
     <!-- Modal Categoria 4 -->
-    <div class="modal fade" id="behavior" tabindex="-1" role="dialog" aria-labelledby="behaviorLabel">
+    <div class="modal fade" id="studies" tabindex="-1" role="dialog" aria-labelledby="studiesLabel">
     <div class="modal-dialog" role="document">
     <div class="modal-content">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="behaviorLabel">COMPORTAMENTO</h4>
+        <h4 class="modal-title" id="studiesLabel">ESTUDOS</h4>
       </div>
       <div class="modal-body">
         <ul class="list-unstyled content">
-            <li>A ameaça dos estereótipos: Steele, Claude M.; Aronson, Joshua (November 1995). "Stereotype threat and the intellectual test performance of African Americans". Journal of Personality and Social Psychology.</li>
+            <li>Diferença entre gêneros - Comparativo entre países | <a href=" http://reports.weforum.org/global-gender-gap-report-2016/">2016</a></li>
         </ul>
       </div>
       <div class="modal-footer">
@@ -262,38 +362,16 @@
 </div>
 
 
-<div class ="mission">
-<h1>POR QUE O "NA VERDADE" EXISTE:</h1>
-<h2>É comum ouvir <span class="holder-1"></span> todo tipo de afirmação <span class="holder-2"></span> sobre as mulheres.</h2>
 
-<h2>Na hora, o impulso pode ser deixar passar, mas é “deixando passar” que reforçamos uma fala de <span class="holder-3"></span>.</h2>
-
-<h2> Neste site você pode buscar respostas para lidar com estas situações e fazer sua parte liderando a mudança de discurso.</h2>
-
-
-</div>
-
-
-<div class ="contribute">
-     
-    <h1>Ajude a ampliar o conteúdo. </h1>
-    <h2>Envie mitos que precisam ser derrubados ou recursos que podem ajudar nessa tarefa. A hashtag #naverdade é o jeito mais rápido de contribuir:</h2>
-
-        <!-- Widget para trazer timeline do Twitter -->
-        <a class="twitter-timeline"  href="https://twitter.com/search?q=%23naverdade%20lang%3Apt" data-widget-id="795368457126682625">Tweets about #naverdade lang:pt</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-    
-</div>
-
-
-<div class ="contact">
+<div id ="contact">
 <h1>ENTRE EM CONTATO</h1>
 <h2>E-mail: nvdd.nvdd.nvdd@gmail.com</h2>
 <h2>Twitter: @na_vdd </h2>
 
 </div>
 
+</div>
+</div>
 
 <script>
 
