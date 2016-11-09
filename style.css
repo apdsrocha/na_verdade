@@ -73,6 +73,7 @@ p {
   margin-top: 5%;
   margin-right: 3%;
   width: 31.33%;
+  height: 500px;
   float: left;
   text-align: left;
  }
@@ -128,7 +129,7 @@ p {
   
 }
 .button-margin {
-  margin: 20px;
+  margin: 30px;
 }
 
 #contribute {
