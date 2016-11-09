@@ -3,11 +3,11 @@ body {
     font-family: 'Abel';
     font-size: 15px;
     color: #333;
-    background-color: #EEEEEE ;
+    background-color: #E0E7E7;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #E0E7E7;
 }
 a:link {
   text-decoration: nonse;
@@ -20,26 +20,27 @@ a.tituloCase {
   text-transform: uppercase;
 }
 h1 {
-  font-family: 'Fjalla One';
+  font-family: 'Dosis', sans-serif;
   font-size: 40px;
-  color: #fff;
+  color: #B3989D;
   margin-top: 40px;
   margin-bottom: 50px;
   text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
   text-transform: uppercase;
 }
 h1.tituloCor {
-  color: #C70039;
+  color: #EFF4F8;
 }
+
 p.tituloCor  {
-  color: #C70039;
+  color: #E0E7E7;
 }
 
 
 h2 {
-  font-family: 'Fjalla One';
+  font-family: 'Dosis', sans-serif;;
   font-size: 30px;
-  color: #333;
+  color: #EFF4F8;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -50,7 +51,7 @@ p {
 
 
 #wraptop {
-  background-color: lightgrey;
+  background-color: #543948;
   padding: 20px 40px 40px 20px;
   width: 100%;
   font-family: 'Abel';
@@ -60,6 +61,7 @@ p {
   text-align: center;
   list-style: none;
  }
+
 
 #wrap {
   font-family: 'Abel';
@@ -75,8 +77,8 @@ p {
 }
 
 .filterinput {
-  border-color: #C70039;
-  color: black;
+  border-color: #B3989D;
+  color: #543948;
   width: 100%;
   float: left;
  }
@@ -87,7 +89,7 @@ p {
  }
 
 .entry {
-  background-color: #F7F7F7;
+  background-color: #C6BBB9;
   padding: 10px;
   margin-top: 5%;
   margin-right: 2%;
@@ -103,19 +105,19 @@ p {
  }
 
 #about { 
-  background-color:  #F7F7F7;
+  background-color:  #543948;
   padding: 10% 5% 10% 5%;
-  font-family: 'Fjalla One';
+  font-family: 'Dosis', sans-serif;;
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
  }
 
 #learnmore {
-  background-color:  #F7F7F7;
+  background-color:  #C6BBB9;
   padding: 20px 40px 300px 20px;  
   width: 100%;
-  font-family: 'Fjalla One';
+  font-family: 'Dosis', sans-serif;;
   font-size: 20px;
   list-style: none;
   margin-top: 10px;
@@ -160,7 +162,7 @@ p {
 #infocontact {
   background-color:  grey;
   padding: 10% 10% 10% 10%;
-  font-family: 'Fjalla One';
+  font-family: 'Dosis', sans-serif;;
   font-size: 30px;
   text-align: right;
   color: #F7F7F7;
@@ -168,18 +170,18 @@ p {
 }
 
 .navbar-brand {
-  font-family: 'Fjalla One';
+  font-family: 'Dosis', sans-serif;;
   font-size: 30px;
  }
 .navbar-custom {
-  background-color: black;
-  color: white;
-  border-color: black;
+  background-color: #E0E7E7;
+  color: gray;
+  border-color: #E0E7E7;
   
 }
 
 .holder-1, .holder-2 , .holder-3 {
-  color: #C70039;
+  color: #BB7A53;
 }
 
 
@@ -226,7 +228,7 @@ figcaption {
 
 @media (max-width: 600px) {
   .entry {
-    width: 100%;	
+    width: 95%;	
   }
 }
 
