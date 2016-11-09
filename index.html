@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>Na Verdade</title>
     <!-- Caracteres -->
@@ -6,12 +7,12 @@
 
     <!-- Ajustar Tamanho do Browser -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Bootstrap - CSS Javascript e JQuery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+
     <!--MediaQuery para esconder link do whatsapp no desktop-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,159 +28,433 @@
     <!--FAVICON HTML
     <link rel="icon" id="favicon" href="img/nvdd.png" type="image/s-icon">
     -->
-    
+
 
 </head>
 
 <body>
 
 
-            <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="" class="navbar-brand">NA VERDADE</a>
-                    <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#naVerdade"></button>
-                </div>
-                <ul id="naVerdade" class="nav navbar-nav navbar-right collapse navbar-collapse">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="#about">SOBRE</a></li>
-                    <li><a href="#contribute">CONTRIBUA</a></li>
-                    <li><a href="#learnmore">SAIBA MAIS</a></li>
-                    <li><a href="#infocontact">CONTATO</a></li>
-                </ul>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="" class="navbar-brand">NA VERDADE</a>
+                <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#naVerdade"></button>
             </div>
-        </nav>
+            <ul id="naVerdade" class="nav navbar-nav navbar-right collapse navbar-collapse">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a data-toggle="collapse" data-target="#naVerdade" href="#about">SOBRE</a></li>
+                <li><a data-toggle="collapse" data-target="#naVerdade" href="#contribute">CONTRIBUA</a></li>
+                <li><a data-toggle="collapse" data-target="#naVerdade" href="#learnmore">SAIBA MAIS</a></li>
+                <li><a data-toggle="collapse" data-target="#naVerdade" href="#infocontact">CONTATO</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="container">
-            <div id="wraptop">
-                <h1 id="header">QUAL O MITO?</h1>
-            </div>
-            <div id="wrap">
-                <div id="list" class="list-unstyled">
-                    <div class="entry">
+    <div class="container">
+        <div id="wraptop">
+            <h1 id="header">QUAL O MITO?</h1>
+            <p>Pesquise pelo termo ou pela fala que você quer corrigir.</p>
+        </div>
+        <div id="wrap">
+            <div id="list" class="list-unstyled">
 
-                        <div class="myth">“Mulheres não gostam de futebol”</div>
+                <div class="entry">
 
-                        <div class="info">Na verdade, o futebol nasceu popular entre homens e mulheres. No Brasil, há registros de partidas/platéia com presença feminina nos anos 20. Em  1941 um decreto proibiu as mulheres de jogar e frequentar estádios. Foi vigente até 1975. A prática só foi permitida a partir de 1981 mas sem profissionalização (só aconteceu  em 1996. </div>
+                    <div class="myth">“Mulheres não gostam de futebol”</div>
 
-                        <div class="info">Na verdade, as mulheres tiveram muitas conquistas no futebol. Marta, por exemplo, foi escolhida como a melhor jogadora do mundo cinco vezes consecutivas (recorde entre homens e mulheres).</div>
+                    <div class="info">Na verdade, o futebol nasceu popular entre homens e mulheres. No Brasil, há registros de partidas com
+                        presença feminina dentro e fora do campo já nos anos 20. Em 1941 um decreto proibiu as mulheres de
+                        jogar e frequentar estádios e foi vigente até 1975. A profissionalização passou a ser permitida apenas
+                        em 1996.</div>
 
-                        <!-- Botão Fonte 1 -->
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#01">FONTE</button>
+                    <div class="info">Na verdade, as mulheres têm muitas conquistas no futebol. Marta,por exemplo, foi escolhida como a melhor
+                        jogadora do mundo cinco vezes consecutivas. Um recorde entre homens e mulheres.</div>
 
-                        <!-- Modal Fonte 1 -->
-                        <div class="modal fade" id="01" tabindex="-1" role="dialog" aria-labelledby="01Label">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="01Label">Fontes | Artigos | Dados</h4>
-                                    </div>
+                    <!-- Botão Fonte 1 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#01">FONTE</button>
 
-                                    <div class="modal-body">
-                                    <p>As arquibancadas da torcedora e a presen;a feminina nos estádios brasileiros: Costa, Leda, 2016 [Online]</p>
+                    <!-- Modal Fonte 1 -->
+                    <div class="modal fade" id="01" tabindex="-1" role="dialog" aria-labelledby="01Label">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="01Label">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>As arquibancadas da torcedora e a presen;a feminina nos estádios brasileiros: Costa,
+                                        Leda, 2016 [Online]</p>
                                     <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://blogdojuca.uol.com.br/2016/07/as-arquibancadas-da-torcedora-a-presenca-feminina-nos-estadios-brasileiros/ Via @NVDD">Envie por whatsapp</a></p>
 
-                                    </div>
+                                </div>
 
-                                    <div class="modal-footer">
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
                     </div>
 
-                    <div class="entry">
-                        <div class="myth">"Mulheres são ruins em matemática/ não tem aptidão para exatas”</div>
-
-                        <div class="info">Na verdade as habilidades de homens e mulheres para matemática são iguais. Estudos publicados entre 1990 e 2010 mostram que a diferença de performance entre os sexos nao é significante. </div>
-
-                        <div class="info">Na verdade, de tanto repetir que meninas são ruins em matemática se configurou um fenômeno chamado “ameaça do estereótipo”, onde o reforço da sociedade convence as meninas e interfere na performance. </div>
 
 
 
-                        <!-- Botão Fonte 2 -->
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
 
-                        <!-- Modal Fonte 2 -->
-                        <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
-                                    </div>
 
-                                    <div class="modal-body">
-                                    <p> Nicole M. Else-Quest, Janet Shibley Hyde, Marcia C. Linn. Cross-national patterns of gender differences in mathematics: A meta-analysis.. Psychological Bulletin, 2010</p>
+                </div>
+
+                <div class="entry">
+                    <div class="myth">"Mulheres são ruins em matemática e/ou em exatas”</div>
+
+                    <div class="info">Na verdade as habilidades de homens e mulheres para matemática são iguais. Estudos publicados entre 1990
+                        e 2010 mostram que a diferença de performance entre os sexos nao é significante. </div>
+
+                    <div class="info">Na verdade, de tanto repetir que meninas são ruins em matemática se configurou um fenômeno chamado “ameaça
+                        do estereótipo”, onde o reforço da sociedade convence as meninas e interfere na performance. </div>
+
+
+
+                    <!-- Botão Fonte 2 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
+
+                    <!-- Modal Fonte 2 -->
+                    <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p> Nicole M. Else-Quest, Janet Shibley Hyde, Marcia C. Linn. Cross-national patterns of
+                                        gender differences in mathematics: A meta-analysis.. Psychological Bulletin, 2010</p>
                                     <p><a class="whatsapp" href="whatsapp://send?text=linkdoartigo">Envie por whatsapp</a></p>
 
-                                    <p>A ameaça dos estereótipos: Steele, Claude M.; Aronson, Joshua (November 1995). "Stereotype threat and the intellectual test performance of African Americans". Journal of Personality and Social Psychology.</p>
+                                    <p>A ameaça dos estereótipos: Steele, Claude M.; Aronson, Joshua (November 1995). "Stereotype
+                                        threat and the intellectual test performance of African Americans". Journal of Personality
+                                        and Social Psychology.</p>
                                     <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: linkdoartigo">Envie por whatsapp</a></p>
-                                    </div>
+                                </div>
 
-                                    <div class="modal-footer">
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="entry">
-                        <div class="myth">"Mulheres não se destacam em ambientes competitivos”</div>
+                <div class="entry">
+                    <div class="myth">"Mulheres não se destacam em ambientes competitivos”</div>
 
-                        <div class="info">Na verdade os estudos apontam a existência de um ambiente que intimda. As mulheres antecipam e temem represália ao expor suas ideias. Um 2o estudo mostra que estes medos são reais: mulheres assertivas atuando como CEOs são pior avaliadas do que homens agindo da mesma forma.   </div>
+                    <div class="info">Na verdade os estudos apontam a existência de um ambiente que intimda. As mulheres antecipam e temem
+                        represália ao expor suas ideias. Um 2o estudo mostra que estes medos são reais: mulheres assertivas
+                        atuando como CEOs são pior avaliadas do que homens agindo da mesma forma. </div>
 
-                        <div class="info">Na verdade, para melhorar não bastam destaques individuais ou treinos de liderança - é preciso uma mudança de ambiente, que permita colaboração, pare de omitir e interromper a ascenção das mulheres.  </div>
+                    <div class="info">Na verdade, para melhorar não bastam destaques individuais ou treinos de liderança - é preciso uma mudança
+                        de ambiente, que permita colaboração, pare de omitir e interromper a ascenção das mulheres. </div>
 
 
 
-                        <!-- Botão Fonte 3 -->
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
+                    <!-- Botão Fonte 3 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
 
-                        <!-- Modal Fonte 3 -->
-                        <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
-                                    </div>
+                    <!-- Modal Fonte 3 -->
+                    <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
+                                </div>
 
-                                    <div class="modal-body">
+                                <div class="modal-body">
                                     <p>Por que mulheres nao lideram? - Artigo (em inglês) publicado no Huffington Post em Maio/2016</p>
                                     <p><a class="whatsapp" href="whatsapp://send?text=http://www.huffingtonpost.com/elizabeth-bradley-/why-women-dont-lead_b_9825286.html">Envie por whatsapp</a></p>
 
-                                    <p>Quem toma a palavra e por que? - Gênero, poder e volubilidade nas organicaçoes: Brescoll L. Victoria - Yale University (Artigo em Inglês)</p>
+                                    <p>Quem toma a palavra e por que? - Gênero, poder e volubilidade nas organicaçoes: Brescoll
+                                        L. Victoria - Yale University (Artigo em Inglês)</p>
                                     <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo:  http://asq.sagepub.com/content/56/4/622.short VIA @NVDD">Envie por whatsapp</a></p>
-                                    </div>
+                                </div>
 
-                                    <div class="modal-footer">
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entry entry-hide">
+
+                    <div class="myth">“Mulheres não gostam de futebol”</div>
+
+                    <div class="info">Na verdade, o futebol nasceu popular entre homens e mulheres. No Brasil, há registros de partidas com
+                        presença feminina dentro e fora do campo já nos anos 20. Em 1941 um decreto proibiu as mulheres de
+                        jogar e frequentar estádios e foi vigente até 1975. A profissionalização passou a ser permitida apenas
+                        em 1996.</div>
+
+                    <div class="info">Na verdade, as mulheres têm muitas conquistas no futebol. Marta,por exemplo, foi escolhida como a melhor
+                        jogadora do mundo cinco vezes consecutivas. Um recorde entre homens e mulheres.</div>
+
+                    <!-- Botão Fonte 1 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#01">FONTE</button>
+
+                    <!-- Modal Fonte 1 -->
+                    <div class="modal fade" id="01" tabindex="-1" role="dialog" aria-labelledby="01Label">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="01Label">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>As arquibancadas da torcedora e a presen;a feminina nos estádios brasileiros: Costa,
+                                        Leda, 2016 [Online]</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://blogdojuca.uol.com.br/2016/07/as-arquibancadas-da-torcedora-a-presenca-feminina-nos-estadios-brasileiros/ Via @NVDD">Envie por whatsapp</a></p>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+
+
+
+
+
                 </div>
+
+                <div class="entry entry-hide">
+                    <div class="myth">"Mulheres são ruins em matemática e/ou em exatas”</div>
+
+                    <div class="info">Na verdade as habilidades de homens e mulheres para matemática são iguais. Estudos publicados entre 1990
+                        e 2010 mostram que a diferença de performance entre os sexos nao é significante. </div>
+
+                    <div class="info">Na verdade, de tanto repetir que meninas são ruins em matemática se configurou um fenômeno chamado “ameaça
+                        do estereótipo”, onde o reforço da sociedade convence as meninas e interfere na performance. </div>
+
+
+
+                    <!-- Botão Fonte 2 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
+
+                    <!-- Modal Fonte 2 -->
+                    <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p> Nicole M. Else-Quest, Janet Shibley Hyde, Marcia C. Linn. Cross-national patterns of
+                                        gender differences in mathematics: A meta-analysis.. Psychological Bulletin, 2010</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=linkdoartigo">Envie por whatsapp</a></p>
+
+                                    <p>A ameaça dos estereótipos: Steele, Claude M.; Aronson, Joshua (November 1995). "Stereotype
+                                        threat and the intellectual test performance of African Americans". Journal of Personality
+                                        and Social Psychology.</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: linkdoartigo">Envie por whatsapp</a></p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entry entry-hide">
+                    <div class="myth">"Mulheres não se destacam em ambientes competitivos”</div>
+
+                    <div class="info">Na verdade os estudos apontam a existência de um ambiente que intimda. As mulheres antecipam e temem
+                        represália ao expor suas ideias. Um 2o estudo mostra que estes medos são reais: mulheres assertivas
+                        atuando como CEOs são pior avaliadas do que homens agindo da mesma forma. </div>
+
+                    <div class="info">Na verdade, para melhorar não bastam destaques individuais ou treinos de liderança - é preciso uma mudança
+                        de ambiente, que permita colaboração, pare de omitir e interromper a ascenção das mulheres. </div>
+
+
+
+                    <!-- Botão Fonte 3 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
+
+                    <!-- Modal Fonte 3 -->
+                    <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>Por que mulheres nao lideram? - Artigo (em inglês) publicado no Huffington Post em Maio/2016</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=http://www.huffingtonpost.com/elizabeth-bradley-/why-women-dont-lead_b_9825286.html">Envie por whatsapp</a></p>
+
+                                    <p>Quem toma a palavra e por que? - Gênero, poder e volubilidade nas organicaçoes: Brescoll
+                                        L. Victoria - Yale University (Artigo em Inglês)</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo:  http://asq.sagepub.com/content/56/4/622.short VIA @NVDD">Envie por whatsapp</a></p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entry entry-hide">
+
+                    <div class="myth">“Mulheres não gostam de futebol”</div>
+
+                    <div class="info">Na verdade, o futebol nasceu popular entre homens e mulheres. No Brasil, há registros de partidas com
+                        presença feminina dentro e fora do campo já nos anos 20. Em 1941 um decreto proibiu as mulheres de
+                        jogar e frequentar estádios e foi vigente até 1975. A profissionalização passou a ser permitida apenas
+                        em 1996.</div>
+
+                    <div class="info">Na verdade, as mulheres têm muitas conquistas no futebol. Marta,por exemplo, foi escolhida como a melhor
+                        jogadora do mundo cinco vezes consecutivas. Um recorde entre homens e mulheres.</div>
+
+                    <!-- Botão Fonte 1 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#01">FONTE</button>
+
+                    <!-- Modal Fonte 1 -->
+                    <div class="modal fade" id="01" tabindex="-1" role="dialog" aria-labelledby="01Label">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="01Label">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>As arquibancadas da torcedora e a presen;a feminina nos estádios brasileiros: Costa,
+                                        Leda, 2016 [Online]</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://blogdojuca.uol.com.br/2016/07/as-arquibancadas-da-torcedora-a-presenca-feminina-nos-estadios-brasileiros/ Via @NVDD">Envie por whatsapp</a></p>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+                <div class="entry entry-hide">
+                    <div class="myth">"Mulheres são ruins em matemática e/ou em exatas”</div>
+
+                    <div class="info">Na verdade as habilidades de homens e mulheres para matemática são iguais. Estudos publicados entre 1990
+                        e 2010 mostram que a diferença de performance entre os sexos nao é significante. </div>
+
+                    <div class="info">Na verdade, de tanto repetir que meninas são ruins em matemática se configurou um fenômeno chamado “ameaça
+                        do estereótipo”, onde o reforço da sociedade convence as meninas e interfere na performance. </div>
+
+
+
+                    <!-- Botão Fonte 2 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
+
+                    <!-- Modal Fonte 2 -->
+                    <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p> Nicole M. Else-Quest, Janet Shibley Hyde, Marcia C. Linn. Cross-national patterns of
+                                        gender differences in mathematics: A meta-analysis.. Psychological Bulletin, 2010</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=linkdoartigo">Envie por whatsapp</a></p>
+
+                                    <p>A ameaça dos estereótipos: Steele, Claude M.; Aronson, Joshua (November 1995). "Stereotype
+                                        threat and the intellectual test performance of African Americans". Journal of Personality
+                                        and Social Psychology.</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: linkdoartigo">Envie por whatsapp</a></p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entry entry-hide">
+                    <div class="myth">"Mulheres não se destacam em ambientes competitivos”</div>
+
+                    <div class="info">Na verdade os estudos apontam a existência de um ambiente que intimda. As mulheres antecipam e temem
+                        represália ao expor suas ideias. Um 2o estudo mostra que estes medos são reais: mulheres assertivas
+                        atuando como CEOs são pior avaliadas do que homens agindo da mesma forma. </div>
+
+                    <div class="info">Na verdade, para melhorar não bastam destaques individuais ou treinos de liderança - é preciso uma mudança
+                        de ambiente, que permita colaboração, pare de omitir e interromper a ascenção das mulheres. </div>
+
+
+
+                    <!-- Botão Fonte 3 -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#bio">FONTE</button>
+
+                    <!-- Modal Fonte 3 -->
+                    <div class="modal fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="bioLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="bioLabel">Fontes | Artigos | Dados</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>Por que mulheres nao lideram? - Artigo (em inglês) publicado no Huffington Post em Maio/2016</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=http://www.huffingtonpost.com/elizabeth-bradley-/why-women-dont-lead_b_9825286.html">Envie por whatsapp</a></p>
+
+                                    <p>Quem toma a palavra e por que? - Gênero, poder e volubilidade nas organicaçoes: Brescoll
+                                        L. Victoria - Yale University (Artigo em Inglês)</p>
+                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo:  http://asq.sagepub.com/content/56/4/622.short VIA @NVDD">Envie por whatsapp</a></p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        
-    
-</div>
+
+            <button id="btnCarregarMais" onclick="tirarEntryHide()" class="btn btn-default">Carregar mais</button>
+        </div>
+
+
+    </div>
 
 
 
-<div id ="about">
-    <h1>POR QUE O "NA VERDADE" EXISTE:</h1>
+    <div id="about">
+        <h1>POR QUE O "NA VERDADE" EXISTE:</h1>
         <h2>É comum ouvir <span class="holder-1"></span> todo tipo de afirmação <span class="holder-2"></span> sobre as mulheres.</h2>
 
         <h2>Na hora, o impulso pode ser deixar passar, mas é “deixando passar” que reforçamos uma fala de <span class="holder-3"></span>.</h2>
@@ -187,111 +462,111 @@
         <h2> Neste site você pode buscar respostas para lidar com estas situações e fazer sua parte liderando a mudança de discurso.</h2>
 
 
-</div>
+    </div>
 
 
-<div id ="contribute">
-     
-    <h1 class="font">Ajude a ampliar o conteúdo. </h1>
-        <h2 class="font">Envie mitos que precisam ser derrubados ou recursos que podem ajudar nessa tarefa. A hashtag #naverdade é o jeito mais rápido de contribuir:</h2>
+    <div id="contribute">
+
+        <h1 class="font">Ajude a ampliar o conteúdo. </h1>
+        <h2 class="font">Envie mitos que precisam ser derrubados ou recursos que podem ajudar nessa tarefa. A hashtag #naverdade é o jeito
+            mais rápido de contribuir:</h2>
 
         <!-- Widget para trazer timeline do Twitter -->
-        <a class="twitter-timeline"  href="https://twitter.com/search?q=%23naverdade%20lang%3Apt" data-widget-id="795368457126682625">Tweets about #naverdade lang:pt</a>
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23naverdade%20lang%3Apt" data-widget-id="795368457126682625">Tweets about #naverdade lang:pt</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-    
-</div>
 
 
-<div id ="learnmore">
-    <h1>SAIBA MAIS</h1>
-    <p> Nossa coleção de recursos, artigos, iniciativas, espaços e conteúdos relacionados a mulheres:</p>
-
-    <ul class="colecao-lista">
-        <li><a href="#coletivos" class="btn btn-default button-margin">Coletivos</a></li>
-
-        <li><a href="#mulheres" class="btn btn-default button-margin">Mulheres Incríveis</a></li>
-
-        <li><a href="#motivacao" class="btn btn-default button-margin">Motivação</a></li>
-    </ul>
-
-    <!-- Biblioteca -->
-    <div class="biblioteca" id="coletivos">
-
-        <figure>
-            <a href="https://www.facebook.com/modefica/"><img class="pics" src="img/col_modefica.jpg"></a>
-            <figcaption>Coletivo ModeFica</figcaption>
-        </figure>
-        <figure>
-            <a href="https://www.facebook.com/NaoKahlo/"><img class="pics" src="img/col_naomekahlo.jpg"></a>
-            <figcaption>Coletivo Não Me Kahlo</figcaption>
-        </figure>
-        <figure>
-            <a href="https://www.facebook.com/ColetivoFeminista/"><img class="pics" src="img/col_feminista.jpg"></a>
-            <figcaption>Coletivo Feminista </figcaption>
-        </figure>
-        
-    </div>
-    
-    <div class="biblioteca"  id="mulheres">
-
-        <figure>
-        <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace"><img class="pics" src="img/wom_ada.jpg"></a>
-        <figcaption>
-        Ada Lovelace
-        </figcaption>
-        </figure>
-
-        <figure>
-        <a href="http://www.lugardemulher.com.br/"><img class="pics" src="img/wom_clara.jpg">
-        </a>
-        <figcaption>
-        Clara Averbuck
-        </figcaption>
-        </figure>
-
-        <figure>
-        <a href="http://thinkolga.com/a-olga/"><img class="pics" src="img/wom_ju.jpg"></a>
-        <figcaption>
-        Juliana Faria
-        </figcaption>
-        </figure>
-
-        <figure>
-        <a href="https://en.wikipedia.org/wiki/Steve_Shirley"><img class="pics" src="img/wom_steph.jpg">
-        </a>        
-        <figcaption>Stephanie Shirley</figcaption>
-        </figure>
-
-        
-        
     </div>
 
-    <div class="biblioteca"  id="motivacao">
-        <figure>
-            <a href="https://www.ted.com/talks/dame_stephanie_shirley_why_do_ambitious_women_have_flat_heads?language=pt-br"><img class="pics" src="img/ins_ted01.jpg">
-            </a>        
-            <figcaption>TED - Stephanie Shirley</figcaption>
-        </figure>
+
+    <div id="learnmore">
+        <h1>SAIBA MAIS</h1>
+        <p> Nossa coleção de recursos, artigos, iniciativas, espaços e conteúdos relacionados a mulheres:</p>
+
+        <ul class="colecao-lista">
+            <li><a href="#coletivos" class="btn btn-default button-margin">Coletivos</a></li>
+
+            <li><a href="#mulheres" class="btn btn-default button-margin">Mulheres Incríveis</a></li>
+
+            <li><a href="#motivacao" class="btn btn-default button-margin">Motivação</a></li>
+        </ul>
+
+        <!-- Biblioteca -->
+        <div class="biblioteca" id="coletivos">
+
+            <figure>
+                <a href="https://www.facebook.com/modefica/"><img class="pics" src="img/col_modefica.jpg"></a>
+                <figcaption>Coletivo ModeFica</figcaption>
+            </figure>
+            <figure>
+                <a href="https://www.facebook.com/NaoKahlo/"><img class="pics" src="img/col_naomekahlo.jpg"></a>
+                <figcaption>Coletivo Não Me Kahlo</figcaption>
+            </figure>
+            <figure>
+                <a href="https://www.facebook.com/ColetivoFeminista/"><img class="pics" src="img/col_feminista.jpg"></a>
+                <figcaption>Coletivo Feminista </figcaption>
+            </figure>
+
+        </div>
+
+        <div class="biblioteca" id="mulheres">
+
+            <figure>
+                <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace"><img class="pics" src="img/wom_ada.jpg"></a>
+                <figcaption>
+                    Ada Lovelace
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="http://www.lugardemulher.com.br/"><img class="pics" src="img/wom_clara.jpg">
+                </a>
+                <figcaption>
+                    Clara Averbuck
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="http://thinkolga.com/a-olga/"><img class="pics" src="img/wom_ju.jpg"></a>
+                <figcaption>
+                    Juliana Faria
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://en.wikipedia.org/wiki/Steve_Shirley"><img class="pics" src="img/wom_steph.jpg">
+                </a>
+                <figcaption>Stephanie Shirley</figcaption>
+            </figure>
+
+
+
+        </div>
+
+        <div class="biblioteca" id="motivacao">
+            <figure>
+                <a href="https://www.ted.com/talks/dame_stephanie_shirley_why_do_ambitious_women_have_flat_heads?language=pt-br"><img class="pics" src="img/ins_ted01.jpg">
+                </a>
+                <figcaption>TED - Stephanie Shirley</figcaption>
+            </figure>
+        </div>
+
+        <div class="biblioteca" id="estudos">
+            <figure>
+                <a href="http://reports.weforum.org/global-gender-gap-report-2016/"><img class="pics" src="img/ins_ted01.jpg">
+                </a>
+                <figcaption>Desigualdade global entre gêneros (ENG)</figcaption>
+            </figure>
+        </div>
     </div>
 
-    <div class="biblioteca"  id="estudos">
-        <figure>
-            <a href="http://reports.weforum.org/global-gender-gap-report-2016/"><img class="pics" src="img/ins_ted01.jpg">
-            </a>        
-            <figcaption>Desigualdade global entre gêneros (ENG)</figcaption>
-        </figure>
-    </div>
-</div>
-
-<div id ="infocontact">
-    <h1>ENTRE EM CONTATO</h1>
+    <div id="infocontact">
+        <h1>ENTRE EM CONTATO</h1>
         <h2>E-mail: nvdd.nvdd.nvdd@gmail.com</h2>
         <h2>Twitter: @na_vdd </h2>
+    </div>
 
-</div>
-
-<script>
+    <script>
 
 
 //JS da busca
@@ -368,9 +643,18 @@ function doIt() {
         $(biblioteca).addClass('visivel')
     })
 
-
+// Carregar mais mitos
+function tirarEntryHide(){
+    //pegar os entry-hides -> elementos
+    var entryhides = $(".entry-hide");
+    //remover as classes que fazem com que ela fica invisível
+    entryhides.eq(0).removeClass("entry-hide");
+    entryhides.eq(1).removeClass("entry-hide");
+    entryhides.eq(2).removeClass("entry-hide");
+}
 
 </script>
 
 </body>
+
 </html>

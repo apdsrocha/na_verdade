@@ -19,6 +19,7 @@ h1 {
   font-family: 'Fjalla One';
   font-size: 40px;
   color: #333;
+  margin-top: 40px;
   margin-bottom: 50px;
 
 }
@@ -47,13 +48,13 @@ p {
  }
 
 #wrap {
-  background-color: #F7F7F7;
   font-family: 'Abel';
   font-size: 20px;
   list-style: none;
  }
-.list {
-  background-color: #F7F7F7;
+#list {
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .filterinput {
@@ -73,13 +74,12 @@ p {
   margin-top: 5%;
   margin-right: 3%;
   width: 31.33%;
-  height: 500px;
   float: left;
   text-align: left;
  }
 
 
- .entry:last-child {
+ .entry:nth-child(3n) {
    margin-right: 0;
  }
 
@@ -129,7 +129,7 @@ p {
   
 }
 .button-margin {
-  margin: 30px;
+  margin: 5px;
 }
 
 #contribute {
@@ -213,4 +213,23 @@ figcaption {
   .entry {
     width: 100%;	
   }
+}
+
+
+#btnCarregarMais{
+  display: block;
+  margin: auto;
+  width: 140px;
+}
+
+.entry{
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.16, 0.88, 0.55, 1.04);
+}
+.entry.entry-hide{
+  opacity: 0;
+  height: 0px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
 }
