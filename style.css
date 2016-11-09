@@ -3,26 +3,39 @@ body {
     font-family: 'Abel';
     font-size: 15px;
     color: #333;
-    background-color: grey;
+    background-color: #EEEEEE ;
 }
 a {
     text-decoration: none;
     color: black;
 }
 a:link {
-  text-decoration: none;
+  text-decoration: nonse;
 }
 a:hover {
   text-decoration: none;
 }
+
+a.tituloCase {
+  text-transform: uppercase;
+}
 h1 {
   font-family: 'Fjalla One';
   font-size: 40px;
-  color: #333;
+  color: #fff;
   margin-top: 40px;
   margin-bottom: 50px;
-
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  text-transform: uppercase;
 }
+h1.tituloCor {
+  color: #C70039;
+}
+p.tituloCor  {
+  color: #C70039;
+}
+
+
 h2 {
   font-family: 'Fjalla One';
   font-size: 30px;
@@ -31,12 +44,13 @@ h2 {
   margin-bottom: 40px;
 }
 p {
+  color: #333;
   margin: 30px;
 }
 
 
 #wraptop {
-  background-color: #F7F7F7;
+  background-color: lightgrey;
   padding: 20px 40px 40px 20px;
   width: 100%;
   font-family: 'Abel';
@@ -55,10 +69,14 @@ p {
 #list {
   overflow: hidden;
   margin-bottom: 20px;
+  /*CUIDADO! Gambi pra alinhar*/
+  margin-left: -2%;
+  margin-right: -2%;
 }
 
 .filterinput {
-  border-color: black;
+  border-color: #C70039;
+  color: black;
   width: 100%;
   float: left;
  }
@@ -72,15 +90,11 @@ p {
   background-color: #F7F7F7;
   padding: 10px;
   margin-top: 5%;
-  margin-right: 3%;
-  width: 31.33%;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 29.33%;
   float: left;
   text-align: left;
- }
-
-
- .entry:nth-child(3n) {
-   margin-right: 0;
  }
 
  .info {
@@ -114,11 +128,11 @@ p {
  
 }
 .modal-title {
-  color: red;
+  color: #C70039;
 }
 
 .whatsapp {
-  color: red;
+  color: #C70039;
   font-size: 15px;
 }
 
@@ -133,7 +147,7 @@ p {
 }
 
 #contribute {
-  background-color:  #292F33;
+  background-color:  #A9A9A9;
   padding: 10% 10% 10% 10%;
   width: 100%;
   text-align: center;
@@ -165,7 +179,7 @@ p {
 }
 
 .holder-1, .holder-2 , .holder-3 {
-  color: red;
+  color: #C70039;
 }
 
 
@@ -196,7 +210,8 @@ figcaption {
 }
 
 
-/* MediaQuery para mostrar share do whastapp no mobile e para ajuste das divs no mobile */
+
+/* MediaQuery para compartilhar pelo whastapp no mobile e para ajuste das divs no mobile */
 @media screen and (max-width:1400px)
 {
     .whatsapp { }
@@ -215,7 +230,7 @@ figcaption {
   }
 }
 
-
+/* CSS referente as animações da busca*/
 #btnCarregarMais{
   display: block;
   margin: auto;
@@ -224,12 +239,26 @@ figcaption {
 
 .entry{
   opacity: 1;
-  transition: opacity 0.5s cubic-bezier(0.16, 0.88, 0.55, 1.04);
+  transition: opacity 0.5s cubic-bezier(0.16, 0.88, 0.55, 1.04),
+              transform 1s cubic-bezier(0.16, 0.88, 0.55, 1.04);
 }
+
+.entry.entry-naotanofiltro,
 .entry.entry-hide{
+  transform: translateY(-20px);
   opacity: 0;
   height: 0px;
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+}
+
+.entry.entry-hide.entry-tanofiltro{
+  transform: translateY(0px);
+  opacity: 1;
+  height: auto;
+  margin: 0px 2%;
+  margin-top: 30px;
+  overflow: auto;
+  padding: 10px;
 }
