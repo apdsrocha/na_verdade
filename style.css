@@ -36,6 +36,10 @@ p.tituloCor  {
   color: #E0E7E7;
 }
 
+p.explicacao {
+  font-size: 20px;
+  margin: 100px;
+}
 
 h2 {
   font-family: 'Dosis', sans-serif;;
@@ -45,7 +49,7 @@ h2 {
   margin-bottom: 40px;
 }
 p {
-  color: #333;
+  color: grey;
   margin: 30px;
 }
 
@@ -136,6 +140,14 @@ p {
 .whatsapp {
   color: #C70039;
   font-size: 15px;
+}
+
+.logo {
+  width: 100%;
+  display: block;
+  display: inline;
+  margin-top: 30px;
+
 }
 
 .pics {
