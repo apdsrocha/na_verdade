@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cards">
 
 <head>
     <title>Na Verdade</title>
     <!-- Caracteres -->
     <meta charset=UTF-8>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
     <!-- Bootstrap - CSS Javascript e JQuery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,23 +23,18 @@
     <link href="https://fonts.googleapis.com/css?family=Abel|Dosis" rel="stylesheet">
 
     <!-- Meu CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--FAVICON HTMLs-->
-    <link rel="icon" id="favicon" href="img/nvdd.png" type="image/s-icon">
-    
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-mixpanel.init("9cc8b55735f5adce9b7b3a4d4122033a");</script><!-- end Mixpanel -->
 
 </head>
 
 <body>
 
+
     <!-- Navegação -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
-        <div class="container">
+    <div class="container" >
+         <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+       
             <div class="navbar-header">
                 <a class="navbar-brand tituloCase" href="">Na Verdade</a>
                 <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#naVerdade"></button>
@@ -46,35 +42,28 @@ mixpanel.init("9cc8b55735f5adce9b7b3a4d4122033a");</script><!-- end Mixpanel -->
             <ul id="naVerdade" class="nav navbar-nav navbar-right collapse navbar-collapse">
                 <li><a href="index.html">INICIO</a></li>
                 <li><a data-toggle="collapse" data-target="#naVerdade" href="#about">SOBRE</a></li>
-                
-                <!--
-                <li><a data-toggle="collapse" data-target="#naVerdade" href="#contribute">CONTRIBUA</a></li>-->
                 <li><a data-toggle="collapse" data-target="#naVerdade" href="#learnmore">SAIBA MAIS</a></li>
-                
                 <li><a data-toggle="collapse" data-target="#naVerdade" href="#infocontact">CONTATO</a></li>
             </ul>
-        </div>
-    </nav>
+         </nav>
+    </div>
+    
 
-    <div class="container">
+    <div class="container" ng-controller="CardsController">
+
 
         <div id="wraptop">
-
             <h1 id="header">Espera um pouco...</h1>
             <p class="tituloCor">Pesquise pelo termo ou pela fala que você quer corrigir.</p>
+            <input type="text" ng-model="searchBox">
         </div>
-        <div id="wrap">
+        <div id="wrap" >
             <div id="list" class="list-unstyled">
-                <div class="entry">
-                    <div class="myth">“Mulheres não gostam de futebol”</div>
+                <div class="entry" ng-repeat="card in cards | filter:searchBox">
+                    <div class="myth">{{card.myth}}</div>
 
-                    <div class="info">Na verdade, o futebol nasceu popular entre homens e mulheres. No Brasil, há registros de partidas com
-                        presença feminina dentro e fora do campo já nos anos 20. Em 1941 um decreto proibiu as mulheres de
-                        jogar e frequentar estádios e foi vigente até 1975. A profissionalização passou a ser permitida apenas
-                        em 1996.</div>
-
-                    <div class="info">Na verdade, as mulheres têm muitas conquistas no futebol. Marta,por exemplo, foi escolhida como a melhor
-                        jogadora do mundo cinco vezes consecutivas. Um recorde entre homens e mulheres.</div>
+                    <div class="info">{{card.info}}</div>
+                   
 
                     <!-- Botão Fonte 1 -->
 
@@ -86,56 +75,13 @@ mixpanel.init("9cc8b55735f5adce9b7b3a4d4122033a");</script><!-- end Mixpanel -->
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="01Label">Fontes | Artigos | Dados</h4>
+                                    <h4 class="modal-title">Fontes | Artigos | Dados</h4>
                                 </div>
 
-                                <div class="modal-body">
-                                    <p>As arquibancadas da torcedora e a presença feminina nos estádios brasileiros: Costa,
-                                        Leda, 2016 [Online]</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://blogdojuca.uol.com.br/2016/07/as-arquibancadas-da-torcedora-a-presenca-feminina-nos-estadios-brasileiros/ Via @NVDD">Envie por whatsapp</a></p>
+                                <div class="modal-body" ng-repeat="card in cards">
+                                    <p>{{card.fonte}}</p>
+                                    <!--<p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://blogdojuca.uol.com.br/2016/07/as-arquibancadas-da-torcedora-a-presenca-feminina-nos-estadios-brasileiros/ Via @NVDD">Envie por whatsapp</a></p>-->
 
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="myth">"Mulheres são ruins em matemática e/ou em exatas”</div>
-
-                    <div class="info">Na verdade as habilidades de homens e mulheres para matemática são iguais. Estudos publicados entre 1990
-                        e 2010 mostram que a diferença de performance entre os sexos nao é significante. </div>
-
-                    <div class="info">Na verdade, de tanto repetir que meninas são ruins em matemática se configurou um fenômeno chamado “ameaça
-                        do estereótipo”, onde o reforço da sociedade convence as meninas e interfere na performance. </div>
-
-
-
-                    <!-- Botão Fonte 2 -->
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#02">FONTE</button>
-
-                    <!-- Modal Fonte 2 -->
-                    <div class="modal fade" id="02" tabindex="-1" role="dialog" aria-labelledby="02Label">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="02Label">Fontes | Artigos | Dados</h4>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p> Nicole M. Else-Quest, Janet Shibley Hyde, Marcia C. Linn. Cross-national patterns of
-                                        gender differences in mathematics: A meta-analysis.. Psychological Bulletin, 2010</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=linkdoartigo">Envie por whatsapp</a></p>
-
-                                    <p>A ameaça dos estereótipos: Steele, Claude M.; Aronson, Joshua (November 1995). "Stereotype
-                                        threat and the intellectual test performance of African Americans". Journal of Personality
-                                        and Social Psychology.</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: linkdoartigo">Envie por whatsapp</a></p>
                                 </div>
 
                                 <div class="modal-footer">
@@ -146,129 +92,6 @@ mixpanel.init("9cc8b55735f5adce9b7b3a4d4122033a");</script><!-- end Mixpanel -->
                     </div>
                 </div>
 
-                <div class="entry">
-                    <div class="myth">"Mulheres não se destacam em ambientes competitivos”</div>
-
-                    <div class="info">Na verdade os estudos apontam a existência de um ambiente que intimda. As mulheres antecipam e temem
-                        represália ao expor suas ideias. Um 2o estudo mostra que estes medos são reais: mulheres assertivas
-                        atuando como CEOs são pior avaliadas do que homens agindo da mesma forma. </div>
-
-                    <div class="info">Na verdade, para melhorar não bastam destaques individuais ou treinos de liderança - é preciso uma mudança
-                        de ambiente, que permita colaboração, pare de omitir e interromper a ascenção das mulheres. </div>
-
-
-
-                    <!-- Botão Fonte 3 -->
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#03">FONTE</button>
-
-                    <!-- Modal Fonte 3 -->
-                    <div class="modal fade" id="03" tabindex="-1" role="dialog" aria-labelledby="03Label">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="03Label">Fontes | Artigos | Dados</h4>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p>Por que mulheres nao lideram? - Artigo (em inglês) publicado no Huffington Post em Maio/2016</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=http://www.huffingtonpost.com/elizabeth-bradley-/why-women-dont-lead_b_9825286.html">Envie por whatsapp</a></p>
-
-                                    <p>Quem toma a palavra e por que? - Gênero, poder e volubilidade nas organicaçoes: Brescoll
-                                        L. Victoria - Yale University (Artigo em Inglês)</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo:  http://asq.sagepub.com/content/56/4/622.short VIA @NVDD">Envie por whatsapp</a></p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="entry entry-hide">
-
-                    <div class="myth">“Mulheres não dirigem bem / são má motoristas”</div>
-
-                    <div class="info">Na verdade, essa generalização não tem embasamento. Existem motoristas bons e ruins - não importa o gênero. Isso depende da habilidade e experiência individual. Mas se formos olhar as estatísticas vemos que as mulheres pagam um valor inferior de seguro automotivo, justamente por causarem menos danos (nos EUA os homens pagam U$15 mil a mais ao longo da vida). </div>
-
-                    <div class="info">Na verdade, tendo como amostra os EUA, os homens recebem 3.4x mais multas do que mulheres. Isso é ligado a agressividade no trânsito e comportamentos de alto risco (como não usar cinto de segurança, ultrapassagem perigosa e não respeitar preferencial).</div>
-
-                    <!-- Botão Fonte 4 -->
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#04">FONTE</button>
-
-                    <!-- Modal Fonte 4 -->
-                    <div class="modal fade" id="04" tabindex="-1" role="dialog" aria-labelledby="04Label">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="04Label">Fontes | Artigos | Dados</h4>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p>Men Break More Traffic Laws, Drive More Dangerously Than Women, Concludes QPC Study, 2008 [Online | Inglês]</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://www.marketwired.com/press-release/men-break-more-traffic-laws-drive-more-dangerously-than-women-concludes-qpc-study-920022.htm Via @NVDD">Envie por whatsapp</a></p>
-                                    <p>Why Men Pay More For Auto Insurance Than Women, 2015 [Online | Inglês]</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://www.insurancequotes.org/auto/why-men-pay-more-for-auto-insurance-than-women/ Via @NVDD">Envie por whatsapp</a></p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-                </div>
-
-                <div class="entry entry-hide">
-                    <div class="myth">"Mulheres não se interessam por engenharia | física"</div>
-
-                    <div class="info">Na verdade a participação das mulheres aumenta em ambientes que incentivam a inclusão. Se há uma cultura que não repele, mas sim cria expectativa, a participação feminina cresce. Há países que contam com bons números: 44% dos formandos em engenharia são mulheres na Malásia e 40% na China. </div>
-
-                    <div class="info">Na verdade, estudos demonstram que os países com baixa representação esbarram em três pontos de influência: identidade ("essa carreira é para mim?"), habilidade percebida ("me sinto confiante?") e aspiração ("vejo possibilidades futuras?"). A construção destas respostas pelo ambiente é feita de forma que cria barreiras ao invés de incentivar. </div>
-
-
-
-                    <!-- Botão Fonte 5 -->
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#04">FONTE</button>
-
-                    <!-- Modal Fonte 5 -->
-                    <div class="modal fade" id="04" tabindex="-1" role="dialog" aria-labelledby="04Label">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="04Label">Fontes | Artigos | Dados</h4>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p> Roslyn Prinsley, Amber S. Beavis, Nicholas Clifford-Hordacre "Busting Myths About Women In STEM" (2016)</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://www.chiefscientist.gov.au/wp-content/uploads/OCS-paper-13.pdf Via @NVDD">Envie por whatsapp</a></p>
-
-                                    <p>ARoslyn Prinsley, Amber S. Beavis, Nicholas Clifford-Hordacre "Busting Myths About Women In STEM" - Lista de referências e estudos relevantes (2016).</p>
-                                    <p><a class="whatsapp" href="whatsapp://send?text=Olha só este artigo: http://www.chiefscientist.gov.au/wp-content/uploads/Paper-13-references.pdf Via @NVDD">Envie por whatsapp</a></p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
     
 
         <button id="btnCarregarMais" onclick="tirarEntryHide()" class="btn btn-default">Carregar mais</button>
@@ -289,267 +112,7 @@ mixpanel.init("9cc8b55735f5adce9b7b3a4d4122033a");</script><!-- end Mixpanel -->
             <p class="explicacao">O Na Verdade nasceu como o <a href="http://www.twitter.com/apdsrocha" target="_blank">meu</a> projeto final do <a href="http://www.reprograma.com.br" target="_blank">Reprograma</a> (uma iniciativa incrível para capacitar mulheres e apoiar a sua inclusão na indústria de tecnologia). Ele levou uma semana para ser pensado e três dias para existir em caráter experimental. Daqui para frente a ideia é faze-lo crescer e melhorar. Nesse esforço qualquer ajuda é <a data-target="#naVerdade" href="#infocontact">muito bem-vinda</a>.</p>
         </div>
 
-         <!--
-
-    <div id="contribute">
-
-        <h1 class="font">Ajude a ampliar o conteúdo. </h1>
-        <h2 class="font">Envie falar que precisam ser derrubados ou recursos que podem ajudar nessa tarefa. A hashtag #na_verdade é o jeito
-            mais rápido de contribuir:</h2>-->
-
-
-        <!-- Widget para trazer timeline do Twitter -->
-
-<!--
-            <a class="twitter-timeline"  href="https://twitter.com/hashtag/na_verdade" data-chrome="nofooter noheader noborders noscrollbar transparent" data-widget-id="796381263913287680">#na_verdade Tweets</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
--->
-
-
-</div>
-
-          
-
-    <div id="learnmore">
-        <h1 class="tituloCor">Saiba Mais</h1>
-        <p> Nossa coleção de recursos, artigos, iniciativas, espaços e conteúdos relacionados a mulheres:</p>
-
-        <ul class="colecao-lista">
-            <li><a href="#coletivos" class="btn btn-default button-margin">Coletivos</a></li>
-
-            <li><a href="#mulheres" class="btn btn-default button-margin">Mulheres Incríveis</a></li>
-
-            <li><a href="#motivacao" class="btn btn-default button-margin">Motivação</a></li>
-
-            <li><a href="#estudos" class="btn btn-default button-margin">Dados e Artigos</a></li>
-        </ul>
-
-        <!-- Biblioteca -->
-        <div class="biblioteca" id="coletivos">
-
-            <figure>
-                <a href="https://www.facebook.com/modefica/"><img alt="Logo do coletivo Modefica" class="pics" src="img/col_modefica.jpg"></a>
-                <figcaption>Coletivo ModeFica</figcaption>
-            </figure>
-            <figure>
-                <a href="https://www.facebook.com/NaoKahlo/"><img alt="Logo do coletivo Nao Me Kahlo" class="pics" src="img/col_naomekahlo.jpg"></a>
-                <figcaption>Coletivo Não Me Kahlo</figcaption>
-            </figure>
-            <figure>
-                <a href="https://www.facebook.com/ColetivoFeminista/"><img alt="Logo do coletivo Feminista Saúde e Sexualidade" class="pics" src="img/col_feminista.jpg"></a>
-                <figcaption>Coletivo Feminista </figcaption>
-            </figure>
-            <!--
-            <figure>
-                <a href="https://www.facebook.com/modefica/"><img alt="Logo do coletivo Modefica" class="pics" class="pics" src="img/col_modefica.jpg"></a>
-                <figcaption>Coletivo ModeFica</figcaption>
-            </figure>
-            <figure>
-                <a href="https://www.facebook.com/NaoKahlo/"><img alt="Logo do coletivo Nao Me Kahlo" class="pics" src="img/col_naomekahlo.jpg"></a>
-                <figcaption>Coletivo Não Me Kahlo</figcaption>
-            </figure>
-            <figure>
-                <a href="https://www.facebook.com/ColetivoFeminista/"><img alt="Logo do coletivo Feminista Saúde e Sexualidade" class="pics" src="img/col_feminista.jpg"></a>
-                <figcaption>Coletivo Feminista </figcaption>
-            </figure>
-            -->
-
-        </div>
-
-        <div class="biblioteca" id="mulheres">
-
-            <figure>
-                <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace"><img alt="Foto da Ada Lovelace" class="pics" src="img/wom_ada.jpg"></a>
-                <figcaption>
-                    Ada Lovelace
-                </figcaption>
-            </figure>
-<!--
-            <figure>
-                <a href="http://www.lugardemulher.com.br/"><img alt="Foto da Clara Averbuck" class="pics" src="img/wom_clara.jpg">
-                </a>
-                <figcaption>
-                    Clara Averbuck
-                </figcaption>
-            </figure>
-
-            <figure>
-                <a href="http://thinkolga.com/a-olga/"><img alt="Foto da Juliana Faria" class="pics" src="img/wom_ju.jpg"></a>
-                <figcaption>
-                    Juliana Faria
-                </figcaption>
-            </figure>
-
-            <figure>
-                <a href="https://en.wikipedia.org/wiki/Steve_Shirley"><img alt="Foto da Stephanie Shirley" class="pics" src="img/wom_steph.jpg">
-                </a>
-                <figcaption>
-                    Stephanie Shirley
-                </figcaption>
-            </figure>
--->
-
-
-        </div>
-
-        <div class="biblioteca" id="motivacao">
-            <figure>
-                <a href="https://www.ted.com/talks/dame_stephanie_shirley_why_do_ambitious_women_have_flat_heads?language=pt-br"><img class="pics" src="img/ins_ted01.jpg">
-                </a>
-                <figcaption>TED - Stephanie Shirley</figcaption>
-            </figure>
-            <!--
-            <figure>
-                <a href="https://www.ted.com/talks/dame_stephanie_shirley_why_do_ambitious_women_have_flat_heads?language=pt-br"><img class="pics" src="img/ins_ted01.jpg">
-                </a>
-                <figcaption>TED - Stephanie Shirley</figcaption>
-            </figure>
-
-            <figure>
-                <a href="https://www.ted.com/talks/dame_stephanie_shirley_why_do_ambitious_women_have_flat_heads?language=pt-br"><img class="pics" src="img/ins_ted01.jpg">
-                </a>
-                <figcaption>TED - Stephanie Shirley</figcaption>
-            </figure>
-            -->
-        </div>
-
-        <div class="biblioteca" id="estudos">
-            <figure>
-                <a href="http://reports.weforum.org/global-gender-gap-report-2016/"><img class="pics" src="img/data_01.png">
-                </a>
-                <figcaption>Desigualdade entre gêneros</figcaption>
-            </figure>
-            <!--<figure>
-                <a href="http://reports.weforum.org/global-gender-gap-report-2016/"><img class="pics" src="img/ins_ted01.jpg">
-                </a>
-                <figcaption>Desigualdade entre gêneros</figcaption>
-            </figure>
-            <figure>
-                <a href="http://reports.weforum.org/global-gender-gap-report-2016/"><img class="pics" src="img/ins_ted01.jpg">
-                </a>
-                <figcaption>Desigualdade entre gêneros</figcaption>
-            </figure>
-            <figure>
-                <a href="http://reports.weforum.org/global-gender-gap-report-2016/"><img class="pics" src="img/ins_ted01.jpg">
-                </a>
-                <figcaption>Desigualdade entre gêneros</figcaption>
-            </figure>
-            -->
-        </div>
-    </div>
-
-            <div id="infocontact">
-                <h1.tituloCor >ENTRE EM CONTATO</h1>
-                <h2>E-mail: nvdd.nvdd.nvdd@gmail.com</h2>
-                <h2>Twitter: @na_vdd </h2>
-
-                
-            </div>
-
-        <script>
-
-
-//JS da busca
-
-(function ($) {
-    jQuery.expr[':'].Contains = function(a,i,m){
-        return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
-    };
-
-
-     // Uppercase para caps não interferir no resultado da busca
-     
-    function listFilter(header, list) {
-        var form = $("<form>").attr({"class":"filterform","action":"#"}),
-            input = $("<input>").attr({"class":"filterinput","type":"text"});
-    // Criação de formulário
-
-        $(form).append(input).appendTo(header);
-        $(input)
-            .change( function () {
-            var filter = $(this).val();
-            // Função olha para o h1 
-            if(filter) {
-                $(list).find('.entry').removeClass("entry-tanofiltro");
-                $(list).find('.entry').removeClass("entry-naotanofiltro");
-
-                var elementosQueEscondem = $(list).find(".myth:not(:Contains(" + filter + "))").parent();
-                var elementosQueExibem = $(list).find(".myth:Contains(" + filter + ")").parent();
-
-                elementosQueEscondem.addClass("entry-naotanofiltro");
-                elementosQueExibem.addClass("entry-tanofiltro");
-                // Puxadinho para conseguir incluir os divs entry que estão escondidos na busca (caso contrario ele só busca os 3 primeiros)
-    
-          } else {
-            $(list).find('.entry').removeClass("entry-tanofiltro");
-            $(list).find('.entry').removeClass("entry-naotanofiltro");
-            }
-            return false;
-          })
-        .keyup( function () {
-            $(this).change();
-        });
-      }
-    
-      $(function () {
-        listFilter($("#header"), $("#list"));
-      });
-    }(jQuery));
-
-
-// Carregar mais cards
-function tirarEntryHide(){
-    //pegar os entry-hides -> elementos
-    var entryhides = $(".entry-hide");
-    //remover as classes que fazem com que ela fica invisível
-    entryhides.eq(0).removeClass("entry-hide");
-    entryhides.eq(1).removeClass("entry-hide");
-    entryhides.eq(2).removeClass("entry-hide");
-}
-
-
-
-//JS das letras que se alternam
-    
-var options = [
-    ["no trabalho", "estranha", "agressividade"],
-    ["na escola", "absurda", "violência"],
-    ["no parque", "estranha", "opressão"],
-    ["no ônibus", "idiota", "hostilidade"],
-    ["na loja", "surreal", "medo"],
-    ["na rua", "nojenta", "preconceito"],
-    ["na vida", "errada", "estereótipos"]
-];
-
-var interval = 1800;
-
-var holder1 = $(".holder-1"), holder2 = $(".holder-2"), holder3 = $(".holder-3");
-var currentIndex = 0;
-
-function doIt() {
-    holder1.html(options[currentIndex][0]);
-    holder2.html(options[currentIndex][1]);
-    holder3.html(options[currentIndex][2]);
-    currentIndex = (currentIndex + 1) % options.length;
-    setTimeout(doIt, interval);
-}
-
-  doIt();
-
-// JQuery para a biblioteca
-    $('.colecao-lista li a').click(function(evento) {
-        evento.preventDefault();
-        $('.biblioteca').removeClass('visivel');        
-
-        var biblioteca = $(this).attr('href');
-        $(biblioteca).addClass('visivel')
-    })
-
-mixpanel.track("Button click");
-
-        </script>
-
+        <script src="js/script.js"></script> 
     </body>
 
 </html>
